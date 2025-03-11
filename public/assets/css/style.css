@@ -1,0 +1,67 @@
+body {
+    font-family: sans-serif;
+}
+
+aside {
+    height: 100vh;
+    padding-top: 20px;
+}
+
+aside .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+aside .nav-link {
+    color: white;
+    padding: 10px;
+}
+
+aside .nav-link.active {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+main {
+    background-color: #f8f9fa;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.status-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-box.active {
+    border: 2px solid #007bff; /* Example active state styling */
+}
+
+.status-box .title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.status-box .number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.trends-box, .summary-box, .unresolved-box, .tasks-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space
+}
