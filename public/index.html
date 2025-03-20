@@ -63,7 +63,7 @@
                     </div>
                 </div>
 
-                <div class="row mb-4">
+                <div class="row g-0 mb-4">
                     <div class="col-md-8">
                         <div class="trends-box">
                             <div class="d-flex justify-content-between align-items-center">
@@ -73,31 +73,31 @@
                                     <button class="btn btn-sm btn-outline-secondary">Yesterday</button>
                                 </div>
                             </div>
-                            <p class="text-muted">as of 25 May 2019, 02:41 PM</p>
-                            <img src="your-graph-image.png" alt="Trends Graph" class="img-fluid"> 
+                            <p>as of 25 May 2019, 02:41 PM</p>
+                            <img src="/assets/images/trend_graph.png" alt="Trends Graph" class="img-fluid"> 
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="summary-box">
                             <div class="summary-item">
-                                <div class="title">Resolved</div>
-                                <div class="number">449</div>
+                                <label class="title">Resolved</label>
+                                <p class="number">449</p>
                             </div>
                             <div class="summary-item">
-                                <div class="title">Received</div>
-                                <div class="number">426</div>
+                                <label class="title">Received</label>
+                                <p class="number">426</p>
                             </div>
                             <div class="summary-item">
-                                <div class="title">Average first response time</div>
-                                <div class="number">33m</div>
+                                <label class="title">Average first response time</label>
+                                <p class="number">33m</p>
                             </div>
                             <div class="summary-item">
-                                <div class="title">Average response time</div>
-                                <div class="number">3h 8m</div>
+                                <label class="title">Average response time</label>
+                                <p class="number">3h 8m</p>
                             </div>
                             <div class="summary-item">
-                                <div class="title">Resolution within SLA</div>
-                                <div class="number">94%</div>
+                                <label class="title">Resolution within SLA</label>
+                                <p class="number">94%</p>
                             </div>
                         </div>
                     </div>
@@ -106,22 +106,37 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="unresolved-box">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5>Unresolved tickets</h5>
-                                <a href="#">View details</a>
+                            <div class="title">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0">Unresolved tickets</h5>
+                                    <a class="fw-light text-decoration-none" href="#">View details</a>
+                                </div>
+                                <label><span class="label-text">Group:</span> Support</label>
                             </div>
-                            <ul class="list-unstyled">
-                                <li>Group Support <span class="float-right">4238</span></li>
-                                <li>Waiting on Feature Request <span class="float-right">1005</span></li>
-                                <li>Awaiting Customer Response <span class="float-right">914</span></li>
-                                <li>Pending <span class="float-right">281</span></li>
-                            </ul>
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="support-info w-100 py-3 d-flex flex-row justify-content-between">
+                                    <div>Waiting on Feature Request</div>
+                                    <div class="label-text">4238</div>
+                                </div>
+                                <div class="support-info w-100 py-3 d-flex flex-row justify-content-between">
+                                    <div>Awaiting Customer Response</div>
+                                    <div class="label-text">1005</div>
+                                </div>
+                                <div class="support-info w-100 py-3 d-flex flex-row justify-content-between">
+                                    <div>Awaiting Developer Fix</div>
+                                    <div class="label-text">914</div>
+                                </div>
+                                <div class="support-info w-100 py-3 d-flex flex-row justify-content-between">
+                                    <div>Pending</div>
+                                    <div class="label-text">281</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="tasks-box">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <h5>Tasks</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="mb-0">Tasks</h5>
                                 <a href="#">View all</a>
                             </div>
                             <button class="btn btn-primary btn-sm mb-3">Create new task</button>
