@@ -57,7 +57,7 @@ main {
     font-weight: bold;
 }
 
-.trends-box, .summary-box, .unresolved-box, .tasks-box {
+.trends-box, .summary-box, .custom-card {
     height: 100%;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -94,10 +94,6 @@ main {
     text-align: center;
 }
 
-.summary-item > p {
-    margin: 0;
-}
-
 .summary-item .title {
     font-size: 0.9rem;
     color: #9FA2B4;
@@ -108,19 +104,44 @@ main {
     font-size: 1.6rem;
 }
 
-.unresolved-box, .tasks-box {
+.custom-card, .tasks-box {
     border-radius: 5px;
 }
 
-.unresolved-box label {
+.custom-card label {
     font-size: 0.9rem;
 }
 
-.unresolved-box .title {
+.custom-card-title {
     padding: 20px;
 }
 
-.support-info {
-    padding: 10px 20px;
-    border: 0.5px solid #DFE0EB;
+.custom-card-title a {
+    color: #3751FF;
+}
+
+.custom-card-info-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 0.5px solid #DFE0EB;
+}
+
+.custom-card-info-item .badge {
+    font-weight: normal;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.add-task-btn {
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

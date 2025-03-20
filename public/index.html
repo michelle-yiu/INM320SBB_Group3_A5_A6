@@ -81,23 +81,23 @@
                         <div class="summary-box">
                             <div class="summary-item">
                                 <label class="title">Resolved</label>
-                                <p class="number">449</p>
+                                <text class="number">449</text>
                             </div>
                             <div class="summary-item">
                                 <label class="title">Received</label>
-                                <p class="number">426</p>
+                                <text class="number">426</text>
                             </div>
                             <div class="summary-item">
                                 <label class="title">Average first response time</label>
-                                <p class="number">33m</p>
+                                <text class="number">33m</text>
                             </div>
                             <div class="summary-item">
                                 <label class="title">Average response time</label>
-                                <p class="number">3h 8m</p>
+                                <text class="number">3h 8m</text>
                             </div>
                             <div class="summary-item">
                                 <label class="title">Resolution within SLA</label>
-                                <p class="number">94%</p>
+                                <text class="number">94%</text>
                             </div>
                         </div>
                     </div>
@@ -105,8 +105,8 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="unresolved-box">
-                            <div class="title">
+                        <div class="custom-card">
+                            <div class="custom-card-title">
                                 <div class="d-flex justify-content-between align-items-center mb-2">
                                     <h5 class="mb-0">Unresolved tickets</h5>
                                     <a class="fw-light text-decoration-none" href="#">View details</a>
@@ -114,19 +114,19 @@
                                 <label><span class="label-text">Group:</span> Support</label>
                             </div>
                             <div class="d-flex flex-column justify-content-center align-items-center">
-                                <div class="support-info w-100 py-3 d-flex flex-row justify-content-between">
+                                <div class="custom-card-info-item w-100 py-3 d-flex flex-row justify-content-between">
                                     <div>Waiting on Feature Request</div>
                                     <div class="label-text">4238</div>
                                 </div>
-                                <div class="support-info w-100 py-3 d-flex flex-row justify-content-between">
+                                <div class="custom-card-info-item w-100 py-3 d-flex flex-row justify-content-between">
                                     <div>Awaiting Customer Response</div>
                                     <div class="label-text">1005</div>
                                 </div>
-                                <div class="support-info w-100 py-3 d-flex flex-row justify-content-between">
+                                <div class="custom-card-info-item w-100 py-3 d-flex flex-row justify-content-between">
                                     <div>Awaiting Developer Fix</div>
                                     <div class="label-text">914</div>
                                 </div>
-                                <div class="support-info w-100 py-3 d-flex flex-row justify-content-between">
+                                <div class="custom-card-info-item w-100 py-3 d-flex flex-row justify-content-between">
                                     <div>Pending</div>
                                     <div class="label-text">281</div>
                                 </div>
@@ -134,17 +134,52 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="tasks-box">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h5 class="mb-0">Tasks</h5>
-                                <a href="#">View all</a>
+                        <div class="custom-card">
+                            <div class="custom-card-title">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h5 class="mb-0">Tasks</h5>
+                                    <a class="fw-light text-decoration-none" href="#">View all</a>
+                                </div>
+                                <label><span class="label-text">Today</label>
                             </div>
-                            <button class="btn btn-primary btn-sm mb-3">Create new task</button>
-                            <ul class="list-unstyled">
-                                <li class="task-item">Finish ticket update <span class="badge badge-warning float-right">URGENT</span></li>
-                                <li class="task-item">Create new ticket example <span class="badge badge-success float-right">NEW</span></li>
-                                <li class="task-item">Update ticket report <span class="badge badge-secondary float-right">DEFAULT</span></li>
-                            </ul>
+
+                            <div class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="custom-card-info-item w-100 py-3 d-flex flex-row justify-content-between">
+                                    <div><text class="label-text">Create new tasks</text></div>
+                                    <button type="button" class="btn btn-light add-task-btn" onclick="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9FA2B4" class="bi bi-plus" viewBox="0 0 16 16">
+                                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="custom-card-info-item w-100 py-3 d-flex flex-row justify-content-between">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="finished_checkbox">
+                                        <label class="form-check-label" for="finished_checkbox">
+                                            Finish ticket update
+                                        </label>
+                                    </div>
+                                    <span class="badge bg-warning">URGENT</span>
+                                </div>
+                                <div class="custom-card-info-item w-100 py-3 d-flex flex-row justify-content-between">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="finished_checkbox">
+                                        <label class="form-check-label" for="finished_checkbox">
+                                            Create new ticket example
+                                        </label>
+                                    </div>
+                                    <span class="badge bg-success">NEW</span>
+                                </div>
+                                <div class="custom-card-info-item w-100 py-3 d-flex flex-row justify-content-between">
+                                    <div>
+                                        <input class="form-check-input" type="checkbox" value="" id="finished_checkbox" checked>
+                                        <label class="form-check-label" for="finished_checkbox">
+                                            Update ticket report
+                                        </label>
+                                    </div>
+                                    <span class="badge bg-secondary">DEFAULT</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
