@@ -124,7 +124,7 @@ main {
     font-size: 1.6rem;
 }
 
-.custom-card, .tasks-box {
+.custom-card {
     border-radius: 5px;
 }
 
