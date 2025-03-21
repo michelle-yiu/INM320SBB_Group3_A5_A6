@@ -67,13 +67,33 @@ main {
     padding: 20px;
 }
 
-.trends-box p {
-    color: #9FA2B4;
-    font-size: 0.9rem;
+.trends-box .today-curve {
+    border: 1.2px solid #3751FF;
+    height: 0;
+    width: 20px;
+    margin-left: 24px;
+    margin-right: 8px;
+}
+
+.trends-box .yesterday-curve {
+    border: 1.2px solid #DFE0EB;
+    height: 0;
+    width: 20px;
+    margin-left: 24px;
+    margin-right: 8px;
 }
 
 .label-text {
     color: #9FA2B4;
+    font-size: 0.8rem;
+}
+
+.muted-text {
+    color: #9FA2B4;
+}
+
+.more-muted-text {
+    color: #DFE0EB;
 }
 
 .summary-box {
