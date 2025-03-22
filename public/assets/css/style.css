@@ -1,27 +1,46 @@
+/* Google font - 
+font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 body {
-    font-family: sans-serif;
+    font-family: "Mulish", sans-serif;
+    color: #252733;
 }
 
 aside {
     height: 100vh;
-    padding-top: 20px;
-    overflow-y: scroll;
+    padding-top: 37px;
+    padding-left: 32px;
+    background-color: #363740;
 }
 
 aside .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    margin-bottom: 63px;
+    color: #a4a6b3;
 }
 
 aside .nav-link {
     color: white;
     padding: 10px;
+    font-size: 16px;
+    color: #a4a6b3;
 }
 
 aside .nav-link.active {
-    background-color: #555;
-    border-radius: 5px;
+    font-size: 16px;
+    color: #a4a6b3;
+    background-color: #9fa2b41f;
+}
+
+aside svg {
+    margin-right: 24px;
 }
 
 main {
@@ -33,6 +52,17 @@ main {
 .user-profile {
     display: flex;
     align-items: center;
+}
+
+.rounded-circle {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .status-box {
@@ -48,13 +78,16 @@ main {
 }
 
 .status-box .title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+    font-size: 19px;
+    color: #9FA2B4;
+    margin-bottom: 12px;
 }
 
 .status-box .number {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 40px;
+    color: #252733;
+    font-weight: 700;
+    
 }
 
 .trends-box, .summary-box, .custom-card {
