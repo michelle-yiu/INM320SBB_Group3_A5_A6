@@ -23,9 +23,9 @@ body {
 
 aside {
     height: auto;
-    padding-top: 37px;
-    padding-left: 32px;
+    padding: 37px 32px;
     background-color: #363740;
+    overflow-y: scroll;
 }
 
 aside .logo {
@@ -35,16 +35,24 @@ aside .logo {
 }
 
 aside .nav-link {
-    padding: 10px;
     font-size: 16px;
     color: #a4a6b3;
-    margin-bottom: 9px;
 }
 
 aside .nav-link.active {
     font-size: 16px;
-    color: #DDe2FF;
-    background-color: #9fa2b41f;
+    color: #DDE2FF;
+    background-color: #3E4049;
+    border-left: 4px solid #DDE2FF;
+
+    & > * {
+        margin-left: -4px;
+    }
+}
+
+aside .nav-link:hover {
+    color: #DDE2FF;
+    background-color: #3E4049;
 }
 
 hr {
@@ -55,6 +63,7 @@ hr {
 main {
     background-color: #f7f8fc;
     height: 100vh;
+    overflow-y: scroll;
 }
 
 h2 {
