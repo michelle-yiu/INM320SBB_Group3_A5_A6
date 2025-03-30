@@ -1,0 +1,57 @@
+{
+    "Overview": {
+        "unresolved_text": "Unresolved", 
+        "unresolved_value": 60,
+        "overdue_text": "Overdue", 
+        "overdue_value": 16,
+        "open_text": "Open", 
+        "open_value": 43,
+        "onHold_text": "On hold", 
+        "onHold_value": 64      
+    },
+
+    "Trends": {
+        "resolved_text": "Resolved", 
+        "resolved_value": 449, 
+        "received_text": "Received", 
+        "received_value": 426, 
+        "averageFirstRT_text": "Average first response time", 
+        "averageFirstRT_value": "33m", 
+        "averageRT_text": "Average response time", 
+        "averageRT_value": "3h8m", 
+        "resolutionSLA_text": "Resolution within SLA", 
+        "resolutionSLA_value": "94%"
+    }, 
+
+    "UnresolvedTickets": {
+        "waitingRequest_text": "Waiting on Feature Request", 
+        "waitingRequest_value": 4238, 
+        "awaitingResponse_text": "Awaiting Customer Response", 
+        "awaitingResponse_value": 1005, 
+        "awaitingFix_text": "Awaiting Developer Fix", 
+        "awaitingFix_value": 914, 
+        "pending_text": "Pending", 
+        "pending_value": 281
+    }, 
+
+    "Tasks": {
+        "finish_text": "Finish ticket update", 
+        "finish_value": "URGENT", 
+        "create_text": "Create new ticket example", 
+        "create_value": "NEW", 
+        "update_text": "Update ticket report", 
+        "update_value": "DEFAULT"
+    },
+
+    "NavBar": {
+        "item1": "Overview", 
+        "item2": "Tickets", 
+        "item3": "Ideas", 
+        "item4": "Contacts", 
+        "item5": "Agents", 
+        "item6": "Articles", 
+        "item7": "Settings", 
+        "item8": "Subscription"
+    }
+
+}
