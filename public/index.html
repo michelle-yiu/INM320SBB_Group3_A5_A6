@@ -15,7 +15,8 @@
         <div class="row">
             <aside class="col-lg-3 py-4 px-0">
                 <div class="d-flex align-items-center py-3 px-4 mb-4">
-                    <svg class="me-2" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="me-2" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <circle cx="16" cy="16" r="16" fill="#3751FF" />
                         <path
                             d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z"
@@ -31,7 +32,7 @@
                     <div class="logo">Dashboard Kit</div>
                 </div>
 
-                <ul class="nav flex-column">
+                <ul class="nav flex-column" id="mainNav">
                     <li class="nav-item">
                         <a class="nav-link px-4 py-3 active" href="#">
                             <svg class="me-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -191,8 +192,8 @@
                     </div>
                 </div>
 
-                <div class="row mb-4">
-                    <div class="col-md-3">
+                <div class="row mb-4" id="OverviewStatus">
+                    <!-- <div class="col-md-3">
                         <div class="status-box">
                             <div class="title">Unresolved</div>
                             <div class="number">60</div>
@@ -215,7 +216,7 @@
                             <div class="title">On hold</div>
                             <div class="number">64</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="row g-0 mb-4">
@@ -241,8 +242,8 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="summary-box">
-                            <div class="summary-item">
+                        <div class="summary-box" id="TrendsCard">
+                            <!-- <div class="summary-item">
                                 <label class="title">Resolved</label>
                                 <text class="number">449</text>
                             </div>
@@ -261,7 +262,7 @@
                             <div class="summary-item">
                                 <label class="title">Resolution within SLA</label>
                                 <text class="number">94%</text>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -356,6 +357,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
